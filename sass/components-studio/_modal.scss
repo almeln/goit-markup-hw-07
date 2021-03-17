@@ -11,7 +11,8 @@
 
   transform: scale(1);
   opacity: 1;
-  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+  visibility: visible;
+  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdrop--is-hidden {

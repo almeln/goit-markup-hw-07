@@ -701,10 +701,11 @@ footer {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
-  -webkit-transition: opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  visibility: visible;
+  -webkit-transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function), visibility 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
 .backdrop--is-hidden {
